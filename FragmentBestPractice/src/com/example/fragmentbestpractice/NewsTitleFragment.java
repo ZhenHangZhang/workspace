@@ -1,0 +1,89 @@
+package com.example.fragmentbestpractice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.R.bool;
+import android.app.Activity;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+public class NewsTitleFragment extends Fragment implements OnItemClickListener {
+
+	private ListView newsTitleListView;
+	private List<News> newsList;
+	private NewsAdapter adapter;
+	private boolean isTwoPane;
+	
+	
+	@Override
+	public void onAttach(Activity activity) {
+		// TODO Auto-generated method stub
+		super.onAttach(activity);
+		newsList = getNews();
+		adapter = new NewsAdapter(activity, R.layout.news_item, newsList);
+		
+	}
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		
+		View view = inflater.inflate(R.layout.news_title_frag, container,false);
+		
+		newsTitleListView = (ListView)view.findViewById(R.id.news_title_list_view);
+		newsTitleListView.setAdapter(adapter);
+		newsTitleListView.setOnItemClickListener(this);
+		
+		
+		return view;
+	}
+	
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onActivityCreated(savedInstanceState);
+		
+		if (getActivity().findViewById(R.id.news_content_layout) !=null) {
+			isTwoPane = true;
+			
+		}else {
+			isTwoPane = false;
+		}
+		
+	}
+	
+	
+	
+	
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		// TODO Auto-generated method stub
+		News news = newsList.get(position);
+		if (isTwoPane) {
+			NewsContentFragment newsContentFragment = (NewsContentFragment)getFragmentManager().findFragmentById(R.id.news_content_fragment);
+			newsContentFragment.refresh(news.getTitle(), news.getContent());
+		}else {
+			NewsContentActivity.actionStart(getActivity(), news.getTitle(), news.getContent());
+		}
+	}
+	private List<News> getNews() {
+		
+		List<News>newsList = new ArrayList<News>();
+		News news1 = new News();
+		news1.setTitle("zhanghangzhen is a developer");
+		news1.setContent("对卡塔尔来说，今天应该是非常重大的变局之日——从早上到下午，先后有沙特、巴林、埃及、阿联酋、也门、利比亚等6个中东国家与之断交，就连南亚岛国马尔代夫，也赶来凑了一把热闹，成为今天第七个与之断交的国家。阿盟也发出声明，开除卡塔尔。");
+		newsList.add(news1);
+		News news2 = new News();
+
+		news2.setTitle("zhanghangzhen is a developer");
+		news2.setContent("- (void)nav:(ParkInfo *)model{YPRoutePlanDriveViewController *routePlanVC = [[YPRoutePlanDriveViewController alloc] init]; routePlanVC.destinationCoordinate = [self returnLocationfromLocationStr:self.selectedPark.entranceCoordinatesAmap]; [self.navigationController pushViewController:routePlanVC animated:YES];");
+		newsList.add(news2);
+		return newsList;	
+	}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=HelloWord/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_131.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1489567893000"/>
+<typeInfo handle="=HelloWord/src&lt;com.PostRepository{PostRepositoryByList.java[PostRepositoryByList" modifiers="513" timestamp="1494920681000"/>
+<typeInfo handle="=ZHZCustomViews/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-14\/android.jar&lt;android.widget(LinearLayout.class[LinearLayout" modifiers="33" timestamp="1495453970000"/>
+<typeInfo handle="=ZHZListViewTest/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-14\/android.jar&lt;android.widget(ArrayAdapter.class[ArrayAdapter" modifiers="33" timestamp="1495453970000"/>
+<typeInfo handle="=FragmentBestPractice/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-24\/android.jar&lt;android.widget(ArrayAdapter.class[ArrayAdapter" modifiers="33" timestamp="1495453941000"/>
+<typeInfo handle="=FragmentBestPractice/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-24\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1495453941000"/>
+<typeInfo handle="=FragmentBestPractice/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-24\/android.jar&lt;android.app(Fragment.class[Fragment" modifiers="33" timestamp="1495453941000"/>
+<typeInfo handle="=BroadcastTest/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-24\/android.jar&lt;android.content(BroadcastReceiver.class[BroadcastReceiver" modifiers="1057" timestamp="1495453941000"/>
+<typeInfo handle="=BroadcastBestPractice/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-23\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1495453952000"/>
+<typeInfo handle="=BroadcastBestPractice/src&lt;com.example.broadcastbestpractice{BaseActivity.java[BaseActivity" modifiers="1" timestamp="1497001251000"/>
+<typeInfo handle="=DataBaseTest/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-23\/android.jar&lt;android.database.sqlite(SQLiteOpenHelper.class[SQLiteOpenHelper" modifiers="1057" timestamp="1495453952000"/>
+<typeInfo handle="=ContactsTest/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-23\/android.jar&lt;android.content(ContentProvider.class[ContentProvider" modifiers="1057" timestamp="1495453952000"/>
+<typeInfo handle="=Myservice/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-23\/android.jar&lt;android.app(Service.class[Service" modifiers="1057" timestamp="1495453952000"/>
+<typeInfo handle="=BroadcastBestPractice/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-23\/android.jar&lt;android.content(BroadcastReceiver.class[BroadcastReceiver" modifiers="1057" timestamp="1495453952000"/>
+<typeInfo handle="=ZHZLayoutTest/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-14\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1495453970000"/>
+<typeInfo handle="=coolweather/\/Users\/zhanghangzhen\/android-sdks\/platforms\/android-14\/android.jar&lt;android.database.sqlite(SQLiteOpenHelper.class[SQLiteOpenHelper" modifiers="1057" timestamp="1495453970000"/>
+</typeInfoHistroy>

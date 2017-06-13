@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <EditText
+        android:id="@+id/edit_dataBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="something here" />
+    
+    <Button
+        android:id="@+id/create_dataBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_dataBase"
+        android:text="create" />
+
+     <Button 
+        android:id="@+id/update_dataBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@+id/create_dataBase"
+        />
+     <Button 
+        android:id="@+id/check_dataBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="check"
+        android:layout_below="@+id/update_dataBase"
+        
+        />
+          <Button 
+        android:id="@+id/delete_dataBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_below="@+id/check_dataBase"/>
+
+</RelativeLayout>

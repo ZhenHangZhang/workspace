@@ -1,0 +1,29 @@
+package com.example.zhztest;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class SecondActivity extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.second_layout);
+		Button button1 = (Button)findViewById(R.id.second_btn);
+		button1.setText("返回");
+		button1.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				finish();
+			}
+		});
+	}
+	
+	
+	
+	
+	
+}
